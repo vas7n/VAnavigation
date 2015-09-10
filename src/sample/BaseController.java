@@ -2,9 +2,7 @@ package sample;
 
 import javafx.scene.Node;
 
-/**
- * Created by Vladimir on 10.09.2015.
- */
+
 public class BaseController implements Controller {
 
     private Node view;
