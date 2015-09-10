@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightsalmon;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View3">
+   <children>
+      <Button fx:id="btnView1" layoutX="205.0" layoutY="247.0" mnemonicParsing="false" text="View 1" />
+      <Label layoutX="286.0" layoutY="95.0" text="View 3" />
+      <Button fx:id="btnView2" layoutX="370.0" layoutY="247.0" mnemonicParsing="false" text="View 2" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+   </children>
+</AnchorPane>
