@@ -1,8 +1,11 @@
 # VAnavigation
 The sample application demonstrates navigation between screens (views) in JavaFX.
 
+![alt tag](javaFXNavigation.gif)
 
 This pattern allows you to:
- - Navigate(String sUrl)
+ - load(String sUrl) //file.fxml
  - GoBack()
  - ClearHistory()
+
+Moreover, it is possible to transfer data between the screens.
