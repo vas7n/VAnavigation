@@ -28,7 +28,7 @@ public class Navigation {
         stage.setScene(scene);
     }
 
-    public Controller Navigate(String sUrl)
+    public Controller load(String sUrl)
     {
         try {
 
@@ -39,11 +39,6 @@ public class Navigation {
             Controller controller = fxmlLoader.getController();
             controller.setView(root);
 
-            scene.setRoot((Parent) root);
-            controllers.add(controller);
-
-            System.out.println("Add to history: " + sUrl + ". Total scenes: " + controllers.size());
-
             return controller;
 
         } catch(Exception e) {
@@ -52,6 +47,18 @@ public class Navigation {
         return null;
     }
 
+    public void Show(Controller controller)
+    {
+        try {
+            scene.setRoot((Parent) controller.getView());
+            controllers.add(controller);
+
+            System.out.println("Add to history: " + controller.toString() + ". Total scenes: " + controllers.size());
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void GoBack()
     {

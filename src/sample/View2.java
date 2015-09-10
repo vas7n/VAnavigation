@@ -3,6 +3,7 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,16 +22,21 @@ public class View2 extends BaseController implements Initializable {
     @FXML
     public Button btnBack;
 
+    @FXML
+    public TextField txtParameter;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         btnView1.setOnAction(event -> {
-            Main.getNavigation().Navigate(View1.URL_FXML);
+            Main.getNavigation().load(View1.URL_FXML).Show();
         });
 
         btnView3.setOnAction(event -> {
-            Main.getNavigation().Navigate(View3.URL_FXML);
+            View3 view3 = (View3)Main.getNavigation().load(View3.URL_FXML);
+            view3.setParameterFromView2(txtParameter.getText());
+            view3.Show();
         });
 
         btnBack.setOnAction(event -> {

@@ -21,7 +21,7 @@ public class Main extends Application {
         primaryStage.show();
 
         //navigate to first view
-        Main.getNavigation().Navigate(View1.URL_FXML);
+        Main.getNavigation().load(View1.URL_FXML).Show();
     }
 
 

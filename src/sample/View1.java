@@ -29,11 +29,11 @@ public class View1 extends BaseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         btnView2.setOnAction(event -> {
-            Main.getNavigation().Navigate(View2.URL_FXML);
+            Main.getNavigation().load(View2.URL_FXML).Show();
         });
 
         btnView3.setOnAction(event -> {
-            Main.getNavigation().Navigate(View3.URL_FXML);
+            Main.getNavigation().load(View3.URL_FXML).Show();
         });
 
         btnBack.setOnAction(event -> {

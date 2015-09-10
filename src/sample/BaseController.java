@@ -16,4 +16,21 @@ public class BaseController implements Controller {
     public void setView (Node view){
         this.view = view;
     }
+
+    @Override
+    public void Show() {
+        PreShowing();
+        Main.getNavigation().Show(this);
+        PostShowing();
+    }
+
+    public void PreShowing()
+    {
+
+    }
+
+    public void PostShowing()
+    {
+
+    }
 }

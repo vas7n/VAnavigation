@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View2">
    <children>
@@ -10,5 +10,7 @@
       <Label layoutX="286.0" layoutY="95.0" text="View 2" />
       <Button fx:id="btnView3" layoutX="370.0" layoutY="247.0" mnemonicParsing="false" text="View 3" />
       <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+      <TextField fx:id="txtParameter" layoutX="230.0" layoutY="161.0" promptText="any text" />
+      <Label layoutX="75.0" layoutY="165.0" text="Parameter for view 3" />
    </children>
 </AnchorPane>
