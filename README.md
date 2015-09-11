@@ -9,3 +9,6 @@ This pattern allows you to:
  - ClearHistory()
 
 Moreover, it is possible to transfer data between the screens.
+
+
+Visit [my blog](http://vas7n.ru) for more information
