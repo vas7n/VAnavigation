@@ -11,4 +11,4 @@ This pattern allows you to:
 Moreover, it is possible to transfer data between the screens.
 
 
-Visit [my blog](http://vas7n.ru) for more information
+Visit [my blog](http://vaprog.blogspot.ru/2016/10/vanavigation-javafx.html) for more information
